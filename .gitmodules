@@ -1,0 +1,3 @@
+[submodule "bondtech-indx-integrations/INDX"]
+	path = bondtech-indx-integrations/INDX
+	url = https://github.com/BondtechAB/INDX.git
