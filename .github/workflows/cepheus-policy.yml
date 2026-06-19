@@ -15,17 +15,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout product
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           path: product
       - name: Checkout cepheus-build
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           repository: CepheusLabs/cepheus-build
           ref: main
           path: cepheus-build
           token: ${{ secrets.CEPHEUS_READ_TOKEN }}
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - name: Central toolchain pins
